@@ -1,0 +1,50 @@
+.jmvc_machinery_framework_flyout .NotificationHeaderMark {
+  width: 40px;
+  vertical-align: middle;
+  float: left;
+  margin-right: 2px;
+  
+}
+.jmvc_machinery_framework_flyout .NotificationHeaderMark span.ui-state-error {
+  float: left;
+  padding-right: 4px;
+  margin-left: 1px;
+}
+.jmvc_machinery_framework_flyout .NotificationHeaderMark span.ui-state-highlight {
+  float: left;
+  padding-right: 4px;
+  margin-left: 1px;
+}
+.jmvc_machinery_framework_flyout .NotificationHeaderMarkGroup {
+  left: -50%;
+  position: relative;
+  
+}
+.jmvc_machinery_framework_flyout .NotificationHeaderMarkGroup2 {
+  float: left;
+  position: relative;
+  left: 50%;
+  
+}
+.jmvc_machinery_framework_flyout .NotificationMessage P {
+  line-height: normal;
+  margin: 1px 1px 5px 1px;
+}
+.jmvc_machinery_framework_flyout .messageWithSourceShowMe P { cursor: pointer; }
+.jmvc_machinery_framework_flyout .NotificationFlyOut {
+  width: 174px;
+  height: fixed;
+  position: absolute;
+}
+.jmvc_machinery_framework_flyout .NotificationHeader {
+  vertical-align: top;
+  padding-top: 2px;
+  height: 100%;
+  cursor: pointer;
+  
+}
+.NotificationFlyOutToggle {
+  width: 20px;
+  float: right;
+  
+}

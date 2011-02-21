@@ -1,0 +1,76 @@
+.NotificationHeader
+{
+}
+.NotificationHeaderMark
+{
+    background-position: center center;
+    background-color: Transparent;
+    background-image: url(); /* Managed by Theme */
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-top: 5px;
+}
+.NotificationHeaderCount
+{
+    width: 30px;
+    height: 18px;
+    float: right;
+    text-align: right;
+    color: #FF2932;
+}
+
+
+.NotificationFlyOut
+{
+    position:fixed;
+    overflow: hidden;
+}
+.NotificationFlyOutHeader
+{
+    height: 18px;
+}
+.NotificationFlyOutResize
+{
+    width: 16px;
+    height: 16px;
+    float: right;
+    background-image: url(); /* Managed by Theme */
+    background-repeat:no-repeat;
+    background-position:right bottom;
+    background-color: Transparent;
+    cursor: ne-resize;
+}
+.NotificationFlyOutToggle
+{
+    width: 14px;
+    height: 16px;
+    float: right;
+    background-image:url(); /* Managed by Theme */
+    background-repeat:no-repeat;
+    background-position:center bottom;
+    background-color: Transparent;
+    cursor: pointer;
+}
+
+.NotificationContainer
+{
+    overflow: auto;
+}
+
+.NotificationMessage
+{
+}
+
+.NotificationMessageMark
+{
+    background-position: center center;
+    background-color: Transparent;
+    background-image: url(); /* Managed by Theme */
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-top: 1px;
+}

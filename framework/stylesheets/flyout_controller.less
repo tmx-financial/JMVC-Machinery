@@ -1,0 +1,66 @@
+@import "common";
+
+@messagesummarywidth: 40px;
+@messagesummaryheight: 20px;
+@openclosebuttonwidth: 20px;
+@flyout_width: @eastbar_width - 6;
+ 
+.jmvc_machinery_framework_flyout
+{
+  .NotificationHeaderMark {
+    width: @messagesummarywidth;
+    vertical-align:middle;
+    float:left;
+    margin-right:2px;
+    .layout_debug(yellow);
+    
+    span.ui-state-error, span.ui-state-highlight {
+	    float: left;
+
+        padding-right: 4px;
+	    margin-left: 1px;
+	}
+  }
+  .NotificationHeaderMarkGroup{
+    left:-50%;
+    position: relative;
+    .layout_debug(blue);
+  }
+  .NotificationHeaderMarkGroup2{
+    float:left;
+    position: relative;
+    left:50%;
+    .layout_debug(blue);
+  }
+  .NotificationMessage{ 
+    P{
+        line-height: normal;
+        margin: 1px 1px 5px 1px;
+    }
+    
+  }
+  .messageWithSourceShowMe P{
+        cursor: pointer;  
+  }
+  .NotificationFlyOut {
+    width: @flyout_width;
+    height:fixed;
+    position:absolute;
+  }
+  .NotificationHeader {
+    vertical-align: top;
+    padding-top: 2px;
+    height:100%;
+	cursor: pointer;
+    
+    .layout_debug(red);
+}
+  
+}
+.NotificationFlyOutToggle{
+    width: @openclosebuttonwidth;
+    float:right;
+    .layout_debug(green);
+    
+}
+  

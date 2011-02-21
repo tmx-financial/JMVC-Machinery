@@ -1,0 +1,48 @@
+@import "common";
+
+@action_bar_height: 27px;
+
+#EastBar {
+	float: left;
+	height: 100%;
+	width: @eastbar_width;
+	
+	overflow: auto;
+	
+	.layout_debug(red);
+}
+
+#FlyOut {
+  vertical-align: bottom;
+  float: left;
+  width: 100%;
+  height:20px;
+  .layout_debug(green);
+}
+
+#SplitBodyContainer {
+	height: 100%;
+	
+	margin-left: @eastbar_width;
+	
+	.layout_debug(grey);
+}
+
+#ActionContainer {
+	overflow: hidden;
+	height: @action_bar_height + 3;
+	
+	.layout_debug(purple);
+	#AppActionRight {
+	  float:right;
+	  padding:1px 3px 1px 3px;
+	}
+}
+
+#SplitBodyArea {
+	min-width: @minimum_content_width;
+
+	padding: 3px;
+	
+	.layout_debug(yellow);
+}

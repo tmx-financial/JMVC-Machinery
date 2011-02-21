@@ -1,0 +1,157 @@
+.group-panel {
+  float: left;
+  padding: 2px;
+  margin: 1px;
+  overflow: auto;
+}
+.group-panel legend {
+  font-weight: bolder;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.focus_group {
+  margin-bottom: 4px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-bottom: 4px;
+}
+input_part {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 142.3px;
+  min-height: 20px;
+  line-height: 20px;
+  border: 1px;
+  border-style: solid;
+  min-height: 18px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  
+}
+.jmvc_machinery_lid_lid.jmvc_machinery_lid_checkbox { margin-top: 6px; }
+.jmvc_machinery_lid_lid.jmvc_machinery_lid_textarea div.lid_label { vertical-align: top; }
+.jmvc_machinery_lid_lid.jmvc_machinery_lid_textarea div.jmvc_machinery_lid_decorator { vertical-align: top; }
+.jmvc_machinery_lid_lid {
+  min-width: 370px;
+  max-width: 370px;
+  width: 370px;
+  margin-top: 3px;
+  overflow: hidden;
+  
+}
+.jmvc_machinery_lid_lid .lid_label {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 155.1px;
+  min-height: 20px;
+  line-height: 20px;
+  padding-left: 2px;
+  padding-right: 2px;
+  cursor: default;
+  
+}
+.jmvc_machinery_lid_lid .jmvc_machinery_lid_decorator {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 66.6px;
+  min-height: 20px;
+  line-height: 20px;
+  cursor: default;
+  overflow: hidden;
+  
+}
+.jmvc_machinery_lid_lid .jmvc_machinery_lid_decorator .ui-state-error {
+  float: left;
+  width: 17px;
+  height: 18px;
+  margin-left: 1px;
+}
+.jmvc_machinery_lid_lid .jmvc_machinery_lid_decorator .ui-state-highlight {
+  float: left;
+  width: 17px;
+  height: 18px;
+  margin-left: 1px;
+}
+.jmvc_machinery_lid_lid input {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 142.3px;
+  min-height: 20px;
+  line-height: 20px;
+  border: 1px;
+  border-style: solid;
+  min-height: 18px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  
+}
+.jmvc_machinery_lid_lid textarea {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 142.3px;
+  min-height: 20px;
+  line-height: 20px;
+  border: 1px;
+  border-style: solid;
+  min-height: 18px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  
+  resize: none;
+}
+.jmvc_machinery_lid_lid input[type=checkbox] {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 144.3px;
+  min-height: 20px;
+  line-height: 20px;
+}
+.jmvc_machinery_lid_lid select {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 142.3px;
+  min-height: 20px;
+  line-height: 20px;
+  border: 1px;
+  border-style: solid;
+  min-height: 18px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  
+}
+.jmvc_machinery_lid_lid option {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 142.3px;
+  min-height: 20px;
+  line-height: 20px;
+  border: 1px;
+  border-style: solid;
+  min-height: 18px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  
+}
+.qtip P.ui-state-error { margin: 2px 0px 2px 0px; }
+.qtip P.ui-state-highlight { margin: 2px 0px 2px 0px; }

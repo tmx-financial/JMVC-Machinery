@@ -1,0 +1,69 @@
+﻿.dialogModalBackGround
+{
+    position:absolute;
+    background-image: url(images/Dialog/Modal.png);
+    background-repeat:repeat;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    height:100%;
+    content:'$nbsp;';
+}
+
+.dialogContainer
+{
+    position: absolute;
+    background-color: White;
+    border: solid 1px Black;
+}
+
+.dialogHeader
+{
+    padding-left: 4px;
+    padding-right: 4px;
+    height: 25px;
+    line-height: 25px;
+    font-weight:bold;
+}
+.dialogHeaderMove
+{
+    cursor: move;
+}
+.dialogCloseImage
+{
+    width: 25px;
+    height: 25px;
+    float: right;
+    background-image: url(images/Dialog/Close.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-color: Transparent;
+    cursor: pointer;
+}
+.dialogBodyContainer
+{
+    padding: 4px;
+    overflow: auto;
+}
+.dialogFooter
+{
+    padding-left: 4px;
+    height: 28px;
+}
+.dialogFooterResize
+{
+    width: 16px;
+    height: 28px;
+    float: right;
+    background-image: url(images/Dialog/Resize.png);
+    background-repeat:no-repeat;
+    background-position:right bottom;
+    background-color: Transparent;
+    cursor: se-resize;
+}
+.dialogFooterMenu
+{
+    margin-top:2px;
+    padding-right: 4px;
+    float: right;
+}

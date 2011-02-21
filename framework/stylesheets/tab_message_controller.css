@@ -1,0 +1,17 @@
+.TabNotificationContainer {
+  display: inline-block;
+  margin: 1px 2px 1px 0px;
+  line-height: 20px;
+}
+.TabNotificationContainer .ui-state-error {
+  float: left;
+  width: 17px;
+  margin-left: 1px;
+  height: 16px;
+}
+.TabNotificationContainer .ui-state-highlight {
+  float: left;
+  width: 17px;
+  margin-left: 1px;
+  height: 16px;
+}

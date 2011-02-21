@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<title>Model Bound Controller Test</title>
+	</head>
+	<body>
+	    <script type='text/javascript' 
+	    src='../../../../steal/steal.js?jmvc_machinery/framework,development'>	 
+        </script>
+		<div id="fodder"></div>
+		<script type='text/javascript'>
+		
+		    $.Model.extend("TestModel",{
+		        schema_properties: {
+		            "hasValidGovernmentIssuedId" : {
+            			"title" : "Valid Government issued I.D.",
+            			"type" : "string"
+            		},
+            		"areApplicantsOldEnough" : {
+            			"title" : "Applicant(s) are of age 18 or older",
+            			"type" : "string"
+            		},
+            		"testButtonEnabled" : {
+						"title" : "Test Button Enabled",
+            		    "type" : "boolean"
+            		},
+            		"testButtonLabel" : {
+						"title" : "Test Button Label",
+            		    "type" : "string"
+            		}
+		        },
+		
+		        init: function(){
+		            this.attachSchema();
+		        },
+		
+				// foo: function(){
+				// 	this.privateInstanceMembers.changeSchemaFor("areApplicantsOldEnough", {readOnly: true, title: "New Title"});
+				// }
+		    },{
+		        
+		    });
+		    
+		    window.model = TestModel.wrap({
+		        hasValidGovernmentIssuedId: false,
+		        areApplicantsOldEnough: false
+		    });
+			$("#fodder").jmvc_machinery_framework_model_bound(window.model, "//jmvc_machinery/framework/test/jasmine/model_bound_controller"); 
+		</script>
+	</body>
+</html>

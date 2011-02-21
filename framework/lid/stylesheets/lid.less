@@ -1,0 +1,149 @@
+/* -*- Mode: less; tab-width: 4; indent-tabs-mode: nil; */
+
+.layout_debug(@color: black) {
+/*    background-color: @color;*/
+}
+
+@part_height: 20px;
+
+@lid_width: 370px;
+
+@input_border: 1px;
+
+@label_padding: 2px;
+@label_width: (@lid_width * 0.43) - (@label_padding * 2);
+@decorator_width: (@lid_width * 0.18);
+@input_width: (@lid_width * 0.39);
+
+.group-panel
+{
+  float: left;
+  padding: 2px;
+  margin: 1px;
+	overflow:auto;
+	
+	legend
+    {
+        font-weight: bolder;
+        white-space:nowrap;
+        text-transform: uppercase;
+    }
+}
+
+.focus_group {
+    margin-bottom: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    
+    padding-bottom: 4px;
+}
+
+.lid_part(@width: 0px) {
+    display: inline-block;
+    padding: 0;
+	margin: 0;
+	border: 0;
+	width: @width;
+    min-height: @part_height;
+    line-height: @part_height;
+}
+
+input_part {
+    .lid_part(@input_width - (@input_border * 2));
+    
+    border: @input_border;
+    border-style: solid;
+    
+    min-height: @part_height - 2;
+    line-height: @part_height - 2;
+    
+    text-align: left;
+    text-transform: uppercase;
+    
+    .layout_debug(red);
+}
+
+.jmvc_machinery_lid_lid.jmvc_machinery_lid_checkbox {
+    margin-top: 6px;
+}
+.jmvc_machinery_lid_lid.jmvc_machinery_lid_textarea {
+    div.lid_label{
+        vertical-align: top;
+    }
+    
+    div.jmvc_machinery_lid_decorator {
+        vertical-align: top;
+    }
+}
+
+.jmvc_machinery_lid_lid {
+    min-width: @lid_width;
+    max-width: @lid_width;
+    width: @lid_width;
+	margin-top: 3px;
+	
+	overflow: hidden;
+	
+	.lid_label {
+        .lid_part(@label_width);
+
+        padding-left: @label_padding;
+        padding-right: @label_padding;
+        
+        cursor: default;
+
+/*        text-align: right;*/
+/*        text-transform: uppercase;*/
+
+        .layout_debug(blue);
+    }
+
+    .jmvc_machinery_lid_decorator{
+        .lid_part(@decorator_width);
+        cursor: default;
+    	overflow: hidden;
+    	
+    	.layout_debug(yellow);
+    	
+    	.ui-state-error, .ui-state-highlight {
+    	    float: left;
+    	    width: 17px;
+    	    height: @part_height - 2;
+    	    
+    	    margin-left: 1px;
+    	}
+    }
+	
+    input {
+        input_part;
+    }
+        
+	textarea
+	{
+	    input_part;
+
+        resize: none;
+	}
+
+	input[type=checkbox]
+	{
+        .lid_part(@input_width);
+	}
+	
+	select {
+	    input_part;
+    }
+
+    option {
+        input_part;
+    }
+    
+    .layout_debug(purple);
+}
+
+.qtip {
+    P.ui-state-error, P.ui-state-highlight {
+          margin: 2px 0px 2px 0px;
+      }  
+}
+

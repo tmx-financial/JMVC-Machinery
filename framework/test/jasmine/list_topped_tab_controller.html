@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List Topped Tab Controller Test</title>
+    </head>
+    <body>
+        <script type='text/javascript'
+            src='../../../../steal/steal.js?jmvc_machinery/framework,development'>
+        </script>
+        <div id="fodder"></div>
+        <script>
+            var options = {
+                    header: ["First Name", "Middle", "Last Name"]
+                },
+                controller = $("#fodder").jmvc_machinery_framework_list_topped_tab(options).controller();
+
+            controller.addTab({text: "First"}, {"First Name" : "Joe", "Middle" : "M", "Last Name" : "Blow"});
+            controller.addTab({text: "Second"}, {"First Name" : "Mary", "Last Name" : "Jane"});
+        </script>
+    </body>
+</html>

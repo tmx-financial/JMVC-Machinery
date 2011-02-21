@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Simple Table ListController Test</title>
+    </head>
+    <body>
+        <script type='text/javascript'
+            src='../../../../steal/steal.js?jmvc_machinery/framework,development'>
+        </script>
+        <div id="fodder"></div>
+        <script type='text/javascript'>
+            $("#fodder").jmvc_machinery_framework_simple_table_list(["First", "Middle", "Last"]);
+            $("#fodder").controller().addRow({"First" : "Brendan", "Middle" : "J", "Last" : "Erwin"});
+            $("#fodder").controller().addRow({"First" : "Brendan", "Middle" : "J", "Last" : "Erwin"});
+        </script>
+    </body>
+</html>
+

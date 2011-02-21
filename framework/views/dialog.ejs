@@ -1,0 +1,19 @@
+<% if (this.modal) {%>
+  <div dialogId="<%= this.dialogId %>" class="dialogModalBackGround"></div>
+<% } %>
+<div dialogId="<%= this.dialogId %>" class="dialogContainer">
+  <div class="dialogHeader">
+    <%= text(this.title) %>
+    <% if (this.closeVisible) {%>
+      <div class="dialogCloseImage"></div>
+    <% } %>
+  </div>
+  <div class="dialogBodyContainer" Resizable="true"></div>
+  <div class="dialogFooter">
+    <!-- View order Reversed due to float Right -->
+    <% if (this.resizable) { %>
+      <div class="dialogFooterResize"></div>
+    <% } %>
+    <div class="dialogFooterMenu"></div>
+  </div>
+</div>

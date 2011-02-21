@@ -1,0 +1,33 @@
+#EastBar {
+  float: left;
+  height: 100%;
+  width: 180px;
+  overflow: auto;
+  
+}
+#FlyOut {
+  vertical-align: bottom;
+  float: left;
+  width: 100%;
+  height: 20px;
+  
+}
+#SplitBodyContainer {
+  height: 100%;
+  margin-left: 180px;
+  
+}
+#ActionContainer {
+  overflow: hidden;
+  height: 30px;
+  
+}
+#ActionContainer #AppActionRight {
+  float: right;
+  padding: 1px 3px 1px 3px;
+}
+#SplitBodyArea {
+  min-width: 832px;
+  padding: 3px;
+  
+}

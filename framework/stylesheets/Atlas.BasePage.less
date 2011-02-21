@@ -1,0 +1,38 @@
+@import "common";
+
+html, body {
+	overflow: hidden;
+	
+	height: 100%;
+	min-width: @minimum_screen_width;
+	
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+
+/*This helps to keep the footer in place.*/
+.wrapper {
+	height: 100%;
+	min-height: 100%;
+	min-width: @minimum_screen_width;
+	margin: 0 auto -30px;
+}
+
+#AppHeaderArea {
+	height: @header_height;
+	width: 100%;
+	
+	min-width: @minimum_screen_width;
+	
+	.layout_debug(yellow);
+}
+
+#AppBodyArea {
+	height: 100%;
+	width: 100%;
+	
+	min-height: 500px;
+	min-width: @minimum_screen_width;
+	
+	.layout_debug(green);
+}

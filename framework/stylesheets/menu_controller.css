@@ -1,0 +1,9 @@
+.jmvc-machinery-menu-marker .ui-menu {
+  min-width: 100px;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 1001;
+}
+.jmvc-machinery-menu-marker .ui-menu-item { cursor: pointer; }
+.jmvc-machinery-menu-marker .ui-menu .ui-icon { float: left; }
+.jmvc-machinery-menu-marker span.ui-icon.ui-icon-carat-1-e { float: right; }
